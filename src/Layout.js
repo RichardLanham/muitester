@@ -1,5 +1,5 @@
 import React from "react";
-import AppAppBar from "./AppAppBar/AppAppBar"
+import AppAppBar from "./AppAppBar/"
 
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -26,8 +26,7 @@ const Layout = ({
 }) => {
     const classes = useStyles();
     return (
-        <div id="back-to-top-anchor">
-            <span className={classes.title}>{title}</span>
+        <div id="back-to-top-anchor">            
             <AppAppBar/>
             <div className={className}>{children}</div>
         </div>

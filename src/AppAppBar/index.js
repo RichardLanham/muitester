@@ -15,7 +15,9 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 
-import AppMenu from './AppMenu/AppMenu'
+import AppMenu from './AppMenu/';
+
+//import AppBarCollapse from './AppBarCollapse';
 
 import ScrolltoSee from './AppMenu/Menus/Components/ScrolltoSee'
 
@@ -101,10 +103,10 @@ HideOnScroll.propTypes = {
 export default function AppAppBar(props) {
   const classes = useStyles();
   return (
-    <>
+    <div>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar position="static">
+        <AppBar position="fixed">
           <Toolbar>
             <IconButton
               edge="start"
@@ -132,10 +134,11 @@ export default function AppAppBar(props) {
             </div>
             <AppMenu/>
           </Toolbar>
-          
+          <ScrolltoSee/>  
         </AppBar>
-        <ScrolltoSee/>
+        
+        
       </HideOnScroll>
-    </>
+    </div>
   );
 }

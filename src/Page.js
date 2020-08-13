@@ -7,9 +7,7 @@ import Container from '@material-ui/core/Container';
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
-        height: 500,
-        border: "solid",
-        borderWidth:"2px"
+        height: 500,        
     },
     menuButton: {
         marginRight: theme.spacing(2)
@@ -30,7 +28,7 @@ const Page = () => {
             <div>
             <Container>
         <Box my={2}>
-          {[...new Array(12)]
+          {[...new Array(222)]
             .map(
               () => `Cras mattis consectetur purus sit amet fermentum.
 Cras justo odio, dapibus ac facilisis in, egestas eget quam.
